@@ -1,0 +1,42 @@
+student:
+  id: 3673
+  firstname: thati
+  lastname: saitheja
+  dob: 22-07-1991
+  blood group: B+
+  gender: male
+  contact:
+    email: saithejas27@gmail.com
+    phone: 8978328328
+  address:
+    street: shakilam
+    city: nellore
+    postalcode: 524003
+
+  courses enrolled:
+
+  - courseid: 4
+  - coursename: java
+  - credits: 5
+
+  - courseid: 5
+  - coursename: oracle
+  - credits: 4
+  enrollemnt_status: active
+  admission_date: 22-05-2016
+
+name: hello world
+hosts: local
+connection: local
+tasks:
+- name: print hello world
+  ansible.builtin.debug:
+    msg: "hello world"
+
+- name: hello world1
+  hosts: local
+  connection: local # no need of username and password
+  tasks:
+  - name: print hello world1
+    ansible.builtin.debug:
+      msg: "Hello World1"
